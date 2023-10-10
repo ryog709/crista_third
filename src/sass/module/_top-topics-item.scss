@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.top-topics-item {
+    border-bottom: rem(1) solid $border-gray;
+    padding-bottom: rem(7);
+    @include mq("sm") {
+        padding-bottom: rem(10);
+    }
+}
+
+.top-topics__list-item {
+    margin-top: rem(10);
+    @include mq("sm") {
+        margin-top: rem(20);
+    }
+}
+
+.top-topics-item__date {
+    font-size: rem(10);
+    font-weight: $medium;
+    color: $font-color-gray;
+    line-height: 1;
+    letter-spacing: 0.015em;
+}
+
+.top-topics-item__text {
+    font-size: rem(12);
+    font-weight: $bold;
+    color: $font-color;
+    line-height: calc(20 / 12);
+    margin-top: rem(3);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    @include mq("sm") {
+        font-size: rem(14);
+    }
+}
+
+.top-topics__button-wrap {
+    margin-top: rem(28);
+    @include mq("lg") {
+        text-align: right;
+    }
+}

@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.drawer {
+    width: 70%;
+    height: calc(100vh - rem(200));
+    height: 100dvh;
+    background-color: $black2;
+    opacity: 0.95;
+    pointer-events: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: rem(100) 0;
+    display: none;
+    @include mq("sm") {
+        width: 50%;
+    }
+    @include mq("lg") {
+        width: calc(520 / 1440) * 100%;
+    }
+}
+
+.header__drawer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.drawer__nav {
+    height: inherit;
+    margin-top: rem(75);
+}
+
+.drawer-logo img {
+    width: rem(60);
+    height: 100%;
+    margin-inline: auto;
+}
+
+.drawer__items {
+    width: 100%;
+    height: calc(100vh - rem(200));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // justify-content: center;
+    font-size: rem(16);
+    line-height: 1;
+    letter-spacing: 0.068em;
+    text-transform: uppercase;
+    margin-top: rem(13);
+    @include mq("md") {
+        font-size: rem(20);
+    }
+}
+
+.drawer__item {
+    display: inline-block;
+    font-weight: $bold;
+}
+
+.drawer__item a {
+    color: white;
+    padding: rem(17) rem(15);
+    display: block;
+}

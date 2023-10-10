@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-top-contact {
+    margin-top: rem(40);
+    @include mq("lg") {
+        margin-top: rem(60);
+    }
+}

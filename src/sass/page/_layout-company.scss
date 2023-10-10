@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-company {
+    margin-top: rem(86);
+    @include mq("lg") {
+        margin-top: rem(127);
+    }
+}

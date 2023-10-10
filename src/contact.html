@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="robots" content="noindex" />
+        <!-- meta情報 -->
+        <title>CONTACT - DIGSMILE_contact</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!-- ogp -->
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
+        <!-- ファビコン -->
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+        <!-- google-fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap"
+            rel="stylesheet" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script defer src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <header class="header layout-header js-header">
+            <div class="header__inner">
+                <div class="header__menu">
+                    <div class="header__logo">
+                        <a href="./">
+                            <img src="./assets/images/header-logo.png" alt="DIGSMILE" />
+                        </a>
+                    </div>
+                    <button class="header__hamburger hamburger js-hamburger">
+                        <span class="hamburger__bars">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="hamburger__text">menu</span>
+                    </button>
+                </div>
+                <div class="header__drawer drawer js-drawer u-mobile">
+                    <nav class="drawer__nav">
+                        <div class="drawer-logo">
+                            <a href="./">
+                                <img
+                                    src="./assets/images/drawer-logo.svg"
+                                    alt="DIGSMILE"
+                                    width="42"
+                                    height="45"
+                                    loading="lazy" />
+                            </a>
+                        </div>
+                        <ul class="drawer__items">
+                            <li class="drawer__item">
+                                <a href="about.html">about us</a>
+                            </li>
+                            <li class="drawer__item">
+                                <a href="index.html#works">works</a>
+                            </li>
+                            <li class="drawer__item">
+                                <a href="index.html#works">culture</a>
+                            </li>
+                            <li class="drawer__item">
+                                <a href="index.html#topics">topics</a>
+                            </li>
+                            <li class="drawer__item">
+                                <a href="./">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__drawer-bg js-header__drawer-bg"></div>
+            </div>
+        </header>
+        <main>
+            <!-- mv -->
+            <section class="sub-mv js-top-mv">
+                <div class="sub-mv__inner">
+                    <div class="sub-mv__wrap">
+                        <div class="sub-mv__image">
+                            <picture>
+                                <source
+                                    srcset="./assets/images/contact-pegi-mv.webp"
+                                    media="(min-width: 600px)"
+                                    type="image/webp" />
+                                <img
+                                    src="./assets/images/contact-pegi-mv-sp.webp"
+                                    alt="お問い合わせ" />
+                            </picture>
+                        </div>
+                        <div class="sub-mv__content">
+                            <h1 class="sub-mv__title">contact</h1>
+                            <p class="sub-mv__sub-title">お問い合わせ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact -->
+            <div class="contact layout-contact">
+                <div class="contact__inner inner">
+                    <p class="contact__text">
+                        ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+                    </p>
+                    <form class="contact__form">
+                        <p class="contact__title">
+                            お問い合わせ種別
+                            <span class="contact__require">必須</span>
+                        </p>
+                        <div class="contact__radio">
+                            <label class="contact__label-radio">
+                                <input type="radio" name="my-radio" checked />
+                                <span class="contact__radio-name">制作依頼</span>
+                            </label>
+                            <label class="contact__label-radio">
+                                <input type="radio" name="my-radio" />
+                                <span class="contact__radio-name">採用</span>
+                            </label>
+                            <label class="contact__label-radio">
+                                <input type="radio" name="my-radio" />
+                                <span class="contact__radio-name">IR</span>
+                            </label>
+                            <label class="contact__label-radio">
+                                <input type="radio" name="my-radio" />
+                                <span class="contact__radio-name">その他</span>
+                            </label>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="organization" class="contact__label">会社名・団体名</label>
+                            <input
+                                type="text"
+                                name="organization"
+                                id="organization"
+                                class="contact__text-item" />
+                        </div>
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">
+                                お名前
+                                <span class="contact__require">必須</span>
+                            </label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="contact__text-item"
+                                required />
+                        </div>
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">
+                                メールアドレス
+                                <span class="contact__require">必須</span>
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="contact__text-item"
+                                required />
+                        </div>
+                        <div class="contact__content">
+                            <label for="tel" class="contact__label">電話番号</label>
+                            <input type="tel" name="tel" id="tel" class="contact__text-item" />
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="textarea" class="contact__label">
+                                お問い合わせ内容
+                                <span class="contact__require">必須</span>
+                            </label>
+                            <textarea
+                                class="contact__textarea-item"
+                                name="textarea"
+                                id="textarea"
+                                required></textarea>
+                        </div>
+                        <div class="contact__content">
+                            <p class="contact__title">privacy policy</p>
+                            <p class="contact__privacy">
+                                <span class="contact__privacy-bold">個人情報保護方針</span>
+                                株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
+                                <span class="contact__privacy-regular">1.個人情報の収集、利用</span>
+                                当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。
+
+                                <span class="contact__privacy-regular">
+                                    2.個人情報の第三者への開示と提供
+                                </span>
+                                収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。
+                                <br />
+                                業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。
+
+                                <span class="contact__privacy-regular">3.個人情報の保護</span>
+                                当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。
+
+                                <span class="contact__privacy-regular">
+                                    4.法令および関連規範の遵守
+                                </span>
+                                当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。
+
+                                <span class="contact__privacy-regular">
+                                    5.個人情報の開示・訂正・削除
+                                </span>
+                                当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。
+
+                                <span class="contact__privacy-regular">
+                                    法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。
+                                </span>
+
+                                <span class="contact__privacy-regular">お問い合わせ窓口</span>
+                                当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。
+                                <br />
+                                株式会社ファイアープレイス
+                                <br />
+                                044-589-4333
+                                <br />
+                            </p>
+                        </div>
+                        <div class="contact__content contact__content-check">
+                            <label>
+                                <input type="checkbox" name="checkbox" />
+                                <span class="contact__content-text">
+                                    個人情報の取り扱いについて同意のうえ送信します。
+                                </span>
+                            </label>
+                        </div>
+                        <div class="contact__button-wrap">
+                            <input
+                                type="submit"
+                                name="submit"
+                                value="送信"
+                                class="contact__button" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer layout-footer">
+            <small class="footer__copyright">&copy;2018&nbsp;DIGSMILE&nbsp;INC.</small>
+        </footer>
+    </body>
+</html>

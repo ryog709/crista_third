@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.vision {
+}
+
+.vision__content {
+    @include mq("sm") {
+        margin-left: rem(120);
+    }
+    @include mq("lg") {
+        margin-right: auto;
+        margin-left: rem(226);
+    }
+}
+
+.vision__sub-title {
+    font-size: rem(24);
+    font-weight: $regular;
+    line-height: 1;
+    margin-top: rem(40);
+    @include mq("sm") {
+        margin-top: rem(33);
+    }
+}
+
+.vision__text {
+    margin-top: rem(28);
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: calc(28 / 14);
+    @include mq("lg") {
+        font-size: rem(16);
+        margin-top: rem(30);
+    }
+}
+
+.vision__button {
+    margin-top: rem(30);
+}

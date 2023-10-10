@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.top-aboutUs {
+    background-image: url(../images/top-aboutUs-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    max-width: rem(1100);
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    @include mq("sm") {
+        padding-top: rem(60);
+        padding-bottom: rem(60);
+    }
+    @include mq("lg") {
+        padding-top: rem(110);
+        padding-bottom: rem(110);
+    }
+}
+
+.top-aboutUs::before {
+    content: "";
+    background-color: $bg-mask;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.top-aboutUs__body {
+    background-color: $white;
+    padding: rem(55) rem(30) rem(52);
+    position: relative;
+    @include mq("sm") {
+        padding-top: rem(45);
+        padding-bottom: rem(37);
+        max-width: rem(590);
+        width: 100%;
+        margin-inline: auto;
+    }
+    @include mq("lg") {
+        padding-top: rem(55);
+        margin-right: auto;
+        margin-left: rem(20);
+        padding-bottom: rem(50);
+    }
+}
+
+
+.top-aboutUs__text {
+    margin-top: rem(22);
+    line-height: calc(28 / 14);
+    font-size: rem(14);
+    font-weight: $medium;
+    font-family: $font-jp;
+    @include mq("sm") {
+        font-size: rem(16);
+    }
+    @include mq("lg") {
+        margin-top: rem(25);
+    }
+}
+
+.top-aboutUs__button {
+    margin-top: rem(25);
+    @include mq("lg") {
+        margin-top: rem(29);
+    }
+}

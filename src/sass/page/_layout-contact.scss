@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.layout-contact {
+    margin-top: rem(74);
+    @include mq("sm") {
+        margin-top: rem(129);
+    }
+    @include mq("lg") {
+        margin-top: rem(100);
+    }
+}

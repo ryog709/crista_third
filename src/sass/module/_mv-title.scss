@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.mv-title {
+    display: inline-block;
+    color: $white;
+    font-size: rem(52);
+    font-weight: $extrabold;
+    line-height: 1;
+    text-transform: uppercase;
+    @include mq("md") {
+        font-size: rem(72);
+    }
+}

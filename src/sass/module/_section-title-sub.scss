@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.section-title-sub {
+	display: block;
+    font-size: rem(32);
+    font-weight: $extrabold;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.068em;
+}

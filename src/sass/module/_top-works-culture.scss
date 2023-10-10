@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.top-works-culture {
+    background-color: $bg-gray;
+    padding: rem(40) 0;
+    @include mq("sm") {
+        padding-top: rem(65);
+    }
+    @include mq("lg") {
+        padding-top: rem(184);
+        padding-bottom: rem(62);
+    }
+}
+
+.top-works-culture__list {
+    @include mq("lg") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: rem(60);
+        grid-row-gap: rem(40);
+    }
+}

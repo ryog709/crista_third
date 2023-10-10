@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-vision {
+    margin-top: rem(85);
+    @include mq("lg") {
+        margin-top: rem(125);
+    }
+}

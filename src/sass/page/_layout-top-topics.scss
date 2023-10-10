@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.layout-top-topics {
+    margin-top: rem(43);
+    @include mq("lg") {
+        margin-top: rem(62);
+    }
+}
+
+

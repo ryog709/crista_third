@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.top-works-culture-item {
+    max-width: rem(520);
+    width: 100%;
+}
+
+.top-works-culture__list-item + .top-works-culture__list-item {
+    margin-top: rem(40);
+    @include mq("sm") {
+        margin-top: rem(85);
+    }
+    @include mq("lg") {
+        margin-top: initial;
+    }
+}
+
+.top-works-culture-item__image {
+    margin-top: rem(35);
+    position: relative;
+}
+
+.top-works-culture-item__image::before {
+    content: "";
+    background-color: $bg-mask;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.top-works-culture-item__image img {
+    aspect-ratio: 345/232;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.top-works-culture-item__text {
+    margin-top: rem(26);
+    @include mq("lg") {
+        margin-top: rem(25);
+    }
+}
+
+.top-works-culture-item__button-wrap {
+    margin-top: rem(25);
+}

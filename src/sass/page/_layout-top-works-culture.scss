@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.layout-top-works-culture {
+	@include mq("lg") {
+		margin-top: rem(-100);
+	}
+}

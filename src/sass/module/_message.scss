@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.message {
+    overflow-x: hidden;
+}
+
+.message__image {
+    margin-left: calc(50% - 50vw);
+    max-width: rem(340);
+    width: 100%;
+    @include mq("sm") {
+        margin-left: initial;
+        max-width: rem(320);
+    }
+    @include mq("lg") {
+        max-width: rem(420);
+    }
+}
+
+.message__image img {
+    aspect-ratio: 340/230;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.message__content {
+    background-color: $bg-gray;
+    margin-top: rem(-100);
+    padding: rem(126) rem(29) rem(80);
+    @include mq("sm") {
+        padding: rem(110) rem(40) rem(96);
+        width: calc(494 / 768) * 100vw;
+        margin-left: auto;
+        margin-top: rem(-88);
+    }
+    @include mq("lg") {
+        padding: rem(120) rem(185) rem(90);
+        width: calc(770 / 1100) * 100%;
+        margin-top: rem(-135);
+    }
+}
+
+.message__text {
+    margin-top: rem(28);
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: calc(28 / 14);
+    @include mq("lg") {
+        font-size: rem(16);
+        margin-top: rem(31);
+    }
+}

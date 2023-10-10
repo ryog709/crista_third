@@ -1,0 +1,110 @@
+@use "global" as *;
+
+.top-mv {
+    min-height: rem(480);
+    height: 100vh;
+    background: linear-gradient(90deg, #fff 0%, #fff 25%, #222222 25%, #222222 100%);
+    color: $white;
+    position: relative;
+    @include mq("md") {
+        background: linear-gradient(90deg, #fff 0%, #fff 27%, #222222 27%, #222222 100%);
+        min-height: rem(600);
+    }
+    @include mq("lg") {
+        background: linear-gradient(90deg, #fff 0%, #fff 46%, #222222 46%, #222222 100%);
+    }
+}
+
+.top-mv__inner.inner {
+    padding-left: 0;
+}
+
+.top-mv__inner {
+    height: inherit;
+    min-height: inherit;
+}
+
+.top-mv__wrap {
+    position: relative;
+    height: 86.5vh;
+    min-height: rem(400);
+    @include mq("sm") {
+        min-height: rem(600);
+    }
+}
+
+.top-mv__image {
+    width: 78%;
+    height: 100%;
+    position: relative;
+    @include mq("lg") {
+        width: 76.5%;
+    }
+}
+
+.top-mv__image::before {
+    content: "";
+    background-color: $bg-mask;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.top-mv__image img {
+    object-fit: cover;
+    object-position: 49% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.top-mv__content {
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    transform: translate(-51%, -51%);
+    width: fit-content;
+    @include mq("sm") {
+        left: 74%;
+    }
+    @include mq("lg") {
+        top: 51%;
+        left: 78%;
+        transform: translate(-53%, -52%);
+    }
+}
+
+.top-mv__sub-title {
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.063em;
+    text-transform: uppercase;
+    line-height: 1;
+    @include mq("lg") {
+        font-size: rem(20);
+    }
+}
+
+.top-mv__sub-title:nth-of-type(2) {
+    margin-top: rem(5);
+    letter-spacing: 0.063em;
+}
+
+.top-mv__title {
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: rem(56);
+    font-weight: $extrabold;
+    line-height: calc(53 / 56);
+    letter-spacing: 0.063em;
+    margin-top: rem(20);
+    @include mq("lg") {
+        margin-top: rem(14);
+        font-size: rem(72);
+        line-height: 1.2;
+    }
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.section-title {
+	display: block;
+    font-size: rem(28);
+    font-weight: $extrabold;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.068em;
+    @include mq("md") {
+        font-size: rem(32);
+    }
+}

@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.layout-message {
+    margin-top: rem(85);
+    @include mq("lg") {
+        margin-top: rem(130);
+    }
+}

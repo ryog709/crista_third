@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.sub-mv-title {
+    display: inline-block;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1;
+    letter-spacing: 0.005em;
+    @include mq("md") {
+        font-size: rem(20);
+    }
+}
