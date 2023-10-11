@@ -41,6 +41,13 @@
     align-items: center;
 }
 
+.header__drawer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
 .header__drawer-bg {
     position: fixed;
     top: 0;
