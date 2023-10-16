@@ -8,7 +8,6 @@
         margin-left: rem(120);
     }
     @include mq("lg") {
-        margin-right: auto;
         margin-left: rem(226);
     }
 }

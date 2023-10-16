@@ -32,7 +32,7 @@
     width: 100%;
     @include mq("lg") {
         order: 1;
-        margin-top: rem(70);
+        padding-top: rem(75);
     }
 }
 
@@ -68,7 +68,10 @@
 
 .top-contact__title {
     @include mq("sm") {
-        margin-top: rem(5);
+        padding-top: rem(5);
+    }
+    @include mq("lg") {
+        padding-top: initial;
     }
 }
 

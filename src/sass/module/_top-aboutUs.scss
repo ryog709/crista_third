@@ -21,6 +21,12 @@
     }
 }
 
+.top-aboutUs__inner.inner {
+    @include mq("lg") {
+        padding-left: rem(50);
+    }
+}
+
 .top-aboutUs::before {
     content: "";
     background-color: $bg-mask;
@@ -47,7 +53,7 @@
     @include mq("lg") {
         padding-top: rem(55);
         margin-right: auto;
-        margin-left: rem(20);
+        margin-left: rem(0);
         padding-bottom: rem(50);
     }
 }
