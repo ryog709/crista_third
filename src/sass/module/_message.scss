@@ -27,17 +27,33 @@
 .message__content {
     background-color: $bg-gray;
     margin-top: rem(-100);
-    padding: rem(126) rem(29) rem(80);
+    padding-top: rem(126);
+    padding-bottom: rem(80);
+    padding-inline: rem(29);
     @include mq("sm") {
-        padding: rem(110) rem(40) rem(96);
+        padding-top: rem(110);
+        padding-bottom: rem(96);
         width: calc(494 / 768) * 100vw;
         margin-left: auto;
         margin-top: rem(-88);
     }
     @include mq("lg") {
-        padding: rem(120) rem(185) rem(90);
+        padding-top: rem(120);
+        padding-bottom: rem(90);
         width: calc(770 / 1100) * 100%;
         margin-top: rem(-135);
+    }
+}
+
+.message__text-wrap {
+    max-width: rem(400);
+    width: 100%;
+    margin-inline: auto;
+    @include mq("sm") {
+        max-width: rem(414);
+    }
+    @include mq("lg") {
+        max-width: rem(400);
     }
 }
 

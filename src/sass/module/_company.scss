@@ -22,7 +22,7 @@
     }
 }
 
-.company__content-dl {
+.company__content-list {
     margin-top: rem(22);
     padding-bottom: rem(22);
     display: grid;
@@ -40,11 +40,11 @@
     }
 }
 
-.company__content-dt {
+.company__content-term {
     font-weight: $bold;
 }
 
-.company__content-dd {
+.company__content-description {
     font-weight: $medium;
 }
 
